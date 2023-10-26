@@ -9,10 +9,23 @@
       Title="AddPhotoMenu">
 
     <Grid Background="White">
-        <StackPanel>
-            <StackPanel Grid.Column="3" Grid.Row="2">
-                <TextBlock>dsopfisdfpoisodpf</TextBlock>
+        
+            <StackPanel Grid.Row="0" HorizontalAlignment="center">
+            <TextBlock FontSize="30">Добавление фотокарточки</TextBlock>
+            <StackPanel VerticalAlignment="Bottom">
+                <Button Width="100" Click="Button_Click">Добавить</Button>
             </StackPanel>
+            </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="10">
+            <TextBlock FontSize="20">Питомец</TextBlock>
+            <ComboBox Width="100" Margin="10 0 0 0"></ComboBox>
         </StackPanel>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal" Margin="10">
+            <TextBlock FontSize="20">Описание</TextBlock>
+            <TextBox Width="100" Margin="10 0 0 0"></TextBox>
+        </StackPanel>
+     
+        
     </Grid>
 </Page>
