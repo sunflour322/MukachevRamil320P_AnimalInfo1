@@ -15,6 +15,7 @@
                 <TextBlock FontSize="30" HorizontalAlignment="Center"  FontWeight="SemiBold">Имя</TextBlock>
                 <ComboBox x:Name="loginCb" ItemsSource="{Binding Masters}" Margin="10" Width="150" Background="DarkOliveGreen" Foreground="White" BorderBrush="Black" BorderThickness="3"></ComboBox>
                 <Button Width="150" Height="40" Margin="0 40 0 0" Foreground="White" Background="DarkOliveGreen" BorderBrush="Black" BorderThickness="5" Click="Button_Click">𝕰𝖓𝖙𝖊𝖗</Button>
+            
             </StackPanel>
         </StackPanel>
     </Grid>
