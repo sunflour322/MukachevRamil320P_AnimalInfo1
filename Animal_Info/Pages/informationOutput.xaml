@@ -1,0 +1,87 @@
+﻿<Page x:Class="Animal_Info.Pages.informationOutput"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Animal_Info.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="informationOutput">
+
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+
+        
+
+
+        <TextBlock Text="Поиск:"
+     Grid.Row="0"
+     Grid.Column="0"
+     HorizontalAlignment="Right"
+     VerticalAlignment="Center"
+     TextWrapping="Wrap"
+     FontSize="24"
+     FontWeight="DemiBold"/>
+        <TextBox Grid.ColumnSpan="2"
+      Grid.Column="1"
+      Grid.Row="0"
+      Margin="10"
+      x:Name="SearchTb"
+      BorderThickness="2" TextChanged="SearchTb_TextChanged"/>
+
+
+
+
+        <ListView Grid.Column="0"
+               Grid.ColumnSpan="7"
+               Grid.Row="2"
+               Grid.RowSpan="5"
+               Margin="10"
+               x:Name="AnimalsLv"
+               ItemsSource="{Binding }">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+
+                        <GridViewColumn Header="ID"
+                                    DisplayMemberBinding="{Binding }" >
+                        </GridViewColumn>
+                        <GridViewColumn Header="Имя"
+                                     DisplayMemberBinding="{Binding }" >
+                        </GridViewColumn>
+                        <GridViewColumn Header="Фото"
+                                      DisplayMemberBinding="{Binding }">
+                        </GridViewColumn>
+                        <GridViewColumn Header="Информация"
+                                      DisplayMemberBinding="{Binding }">
+                        </GridViewColumn>
+                       
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+        
+    </Grid>
+</Page>
